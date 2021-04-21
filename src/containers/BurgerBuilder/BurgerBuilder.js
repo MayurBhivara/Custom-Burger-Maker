@@ -10,10 +10,10 @@ import Spinner from '../../components/UI/Spinner/Spinner'
 
 
 const INGREDIENT_PRICES = {
-    salad: 0.5,
-    cheese: 0.4,
-    meat: 1.3,
-    bacon: 0.7
+    salad: 15,
+    cheese: 20,
+    meat: 40,
+    bacon: 35
 }
 
 class BurgerBuilder extends Component {

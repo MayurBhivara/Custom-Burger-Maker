@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Order from '../../components/Order/Order'
 import axios from '../../axios-orders'
 import withErrorHandler from '../../hoc/WithErrorHandler/WIthErrorHandler'
-
+import moment from 'moment';
 class Orders extends Component {
     state={
         orders:[],
@@ -31,6 +31,7 @@ class Orders extends Component {
                     <Order key={order.id}
                     ingredients={order.ingredients}
                     price={+order.price}
+                    date={moment(order.orderDate).fromNow()}
                     />
                 ))}
             </div>
